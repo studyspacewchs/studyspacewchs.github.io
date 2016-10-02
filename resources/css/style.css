@@ -453,3 +453,55 @@ footer p {
     font-size: 60%;
     margin-top: 17px;
 }
+
+/* ============================================== */
+/* STUDY PACKETS */
+/* ============================================== */
+
+.studypacket-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    background-attachment: fixed;
+}
+
+.studypacket-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ============================================== */
+/* MATH */
+/* ============================================== */
+
+.math-heading:after {
+    background-color: #e67e22; 
+}
+
+/* ============================================== */
+/* CHEM */
+/* ============================================== */
+
+.chem-heading:after {
+    background-color: #3498db; 
+}
+
+/* ============================================== */
+/* PHYSICS */
+/* ============================================== */
+
+.physics-heading:after {
+    background-color: #9b59b6; 
+}
+
+/* ============================================== */
+/* BIO */
+/* ============================================== */
+
+.bio-heading:after {
+    background-color: #27ae60; 
+}
