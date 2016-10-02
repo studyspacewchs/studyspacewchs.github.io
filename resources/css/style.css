@@ -1,0 +1,455 @@
+/* ============================================== */
+/* Green Color:2ecc71 */
+/* ============================================== */
+
+/* ============================================== */
+/* BASIC SETUP */
+/* ============================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color: #555;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ============================================== */
+/* REUSABLE COMPONENTS */
+/* ============================================== */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+.box {
+    padding: 3%;
+}
+
+/* ============================================== */
+/* HEADINGS */
+/* ============================================== */
+
+h1, 
+h2, 
+h3,
+h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #fff;
+    font-weight: 200;
+    font-size: 350%;
+    word-spacing: 3px;
+
+}
+
+h2 {
+    font-weight: 300;
+    color: #000;
+    font-size: 175%;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 115%;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #2ecc71;
+    content: " ";
+    width: 100px;
+    margin: 20px auto;
+}
+
+/* ============================================== */
+/* PARAGRAPHS */
+/* ============================================== */
+.long-copy {
+    line-height: 135%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 17px;
+}
+
+.box p {
+    font-size: 95%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+/* ============================================== */
+/* ICONS */
+/* ============================================== */
+
+.icon-large {
+    font-size: 300%;
+    display: block;
+    color: #3498db;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon-subjects {
+    font-size: 300%;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon-math {
+    color: #e67e22;
+}
+
+.icon-chem {
+    color: #3498db;
+}
+
+.icon-physics {
+    color: #9b59b6;
+}
+
+.icon-bio {
+    color: #27ae60;
+}
+
+/* ============================================== */
+/* LINKS */
+/* ============================================== */
+
+a:link,
+a:visited {
+    color: #2ecc71
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #2ecc71;
+    transition: border-bottom 0.25s, color 0.25s;
+}
+
+a:hover
+a:active {
+    border-bottom: 1px solid transparent;    
+}
+
+/* ============================================== */
+/* BUTTONS */
+/* ============================================== */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 400;
+    border-radius: 200px;
+    text-decoration: none;
+    transition: background-color 0.25s, border 0.25s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #2ecc71;
+    border: 1px solid #2ecc71;
+    margin-right: 12px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #2ecc71;
+    margin-top: 15px;
+}
+
+.btn:hover,
+.btn:active, 
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #28b062;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #28b062;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #28b062;
+}
+
+/* ============================================== */
+/* HEADER */
+/* ============================================== */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-attachment: fixed;
+}
+
+.header-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 125px;
+    width: auto;
+    float: left;
+    margin-top: 25px;
+    border-radius: 200px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.25s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #9b59b6;
+}
+
+/* ============================================== */
+/* DESCRIPTION */
+/* ============================================== */
+
+.section-features .long-copy {
+    line-height: 135%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 17px;
+}
+
+/* ============================================== */
+/* SUBJECT AREAS */
+/* ============================================== */
+.section-subjects {
+    background-color: #eaeaea
+}
+
+.subject-area-heading:after {
+    background-color: #e74c3c;
+}
+
+.math a:link,
+.math a:visited,
+.chem a:link,
+.chem a:visited, 
+.physics a:link,
+.physics a:visited,
+.bio a:link,
+.bio a:visited {
+    padding: 8px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.25s;
+}
+
+.math a:hover,
+.math a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+.chem a:hover,
+.chem a:active {
+    border-bottom: 2px solid #3498db;
+}
+
+.physics a:hover,
+.physics a:active {
+    border-bottom: 2px solid #9b59b6;
+}
+
+.bio a:hover,
+.bio a:active {
+    border-bottom: 2px solid #27ae60;
+}
+
+/* ============================================== */
+/* CONTACT */
+/* ============================================== */
+
+.section-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/CalgaryBackground.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    padding: 5% 0;
+}
+
+.contact-heading {
+    color: #fff;
+}
+.contact-heading:after {
+    background-color: #bdc3c7;
+}
+
+.contact-form {
+    width: 65%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-messages {
+    width:70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#222; 
+}
+
+.success {
+    background-color: rgba(39, 174, 96, 0.75);
+}
+
+.error {
+    background-color: rgba(231, 76, 60, 0.75);
+}
+
+/* ============================================== */
+/* FOOTER */
+/* ============================================== */
+
+footer {
+    background-color: #222;
+    padding: 25px 0px;
+}
+
+.school-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-nav {
+    list-style: none;
+    float: right;
+}
+
+.school-nav li,
+.footer-nav li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.school-nav li:last-child,
+.footer-nav li:last-child {
+    margin-right: 0px;
+}
+
+.school-nav li img {
+    height: 25px;;
+    width: auto;
+    border-color: transparent;
+}
+
+.wchs:link,
+.wchs:visited,
+.cbe:link,
+.cbe:visited,
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    border:0;
+    text-decoration: none;
+    font-size: 70%;
+    color: #888;
+    transition: color 0.25s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd; 
+}
+
+.cbe:hover,
+.cbe:active {
+    color: #3498db;
+}
+
+.wchs:hover,
+.wchs:active {
+    color: #e74c3c;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 60%;
+    margin-top: 17px;
+}
