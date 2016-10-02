@@ -92,20 +92,15 @@
                 <form method="post" action="mailer.php" class="contact-form"> 
                         
                     <div class = "row">  
-                        <?php
-                        if($_GET['success']== 1) {
-                            echo "<div class=\"form-messages success\"> 
+                            <div class="form-messages success"> 
                                 Thank you! Your request has been sent.
-                            </div>";
-                            }
-                       if($_GET['success']== -1) {
-                            echo "<div class=\"form-messages error\"> 
+                            </div>
+                        
+                            <div class="form-messages error"> 
                                 Oops. Something went wrong. Please try again!
-                            </div>";
-                            }    
-                        ?>
-                    </div>
-                
+                            </div>
+                    <div>
+                        
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label for="email">Email</label>
@@ -113,7 +108,7 @@
                         <div class="col span-2-of-3">
                             <input type="email" name="email" id="email" placeholder="Your email" required>
                         </div>
-                    </div>
+                    </div>    
                     <div class = "row">     
                         <div class="col span-1-of-3">
                             <label for="subject">Subject Area</label>
