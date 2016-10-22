@@ -55,10 +55,6 @@
         padding: 30px 0;
     }
     
-    .studypacket-text-box {
-        padding: 0 4%;
-    }
-    
     .header-text-box {
         padding: 0 4%;
     }
@@ -66,7 +62,7 @@
     .col { width: 100%; }
     
     .logo {
-        height: 100px;
+        height: 90px;
         width: auto;
     }
     
@@ -84,6 +80,30 @@
     
     .school-nav {
         margin-left: 40%;
+    }
+    
+    .chem:after,
+    .physics:after,
+    .math:after {
+        display: block;
+        height: 1px;
+        background-color: #ddd;
+        content: " ";
+        width: 150px;
+        margin: 20px auto;
+    }
+    
+    .bio,
+    .chem,
+    .physics {
+        margin-top: 10px;
+    }
+    
+    .math h4:after,
+    .chem h4:after,
+    .physics h4:after,
+    .bio h4:after {
+        display: none;
     }
 }
 
@@ -115,10 +135,6 @@
         padding: 1%;
     }
     
-    .contact-form {
-        width: 100%;
-    }
-    
     .main-nav li a:link,
     .main-nav li a:visited {
     font-size: 80%;
@@ -135,6 +151,30 @@
     .school-nav {
         margin-left: 33%;
         margin-right: 33%;
+    }
+    
+    .chem:after,
+    .physics:after,
+    .math:after {
+        display: block;
+        height: 1px;
+        background-color: #ddd;
+        content: " ";
+        width: 150px;
+        margin: 20px auto;
+    }
+    
+    .bio,
+    .chem,
+    .physics {
+        margin-top: 10px;
+    }
+    
+    .math h4:after,
+    .chem h4:after,
+    .physics h4:after,
+    .bio h4:after {
+        display: none;
     }
 }
     
@@ -157,7 +197,30 @@
     }
     
     .logo {
-        height: 65px;
-        width: auto;
+        display: none;
+    }
+    
+    .chem:after,
+    .physics:after,
+    .math:after {
+        display: block;
+        height: 1px;
+        background-color: #ddd;
+        content: " ";
+        width: 150px;
+        margin: 20px auto;
+    }
+    
+    .bio,
+    .chem,
+    .physics {
+        margin-top: 10px;
+    }
+    
+    .math h4:after,
+    .chem h4:after,
+    .physics h4:after,
+    .bio h4:after {
+        display: none;
     }
 }

@@ -20,8 +20,8 @@
                     <img src="resources/img/WCHSLogo.png" alt="WCHS Logo" class="logo">
                     <ul class="main-nav">
                         <li><a href="#section-description">What We Do</a></li>   
-                        <li><a href="#section-subjects">Subject Areas</a></li>
-                        <li><a href="#section-contact">Contact Us</a></li>
+                        <li><a href="#section-subjects">Study Packets</a></li>
+
                     </ul>
                 </div>
             </nav>
@@ -29,7 +29,7 @@
                 <h1>
                    WCHS Study Space
                 </h1>
-                    <a class="btn btn-ghost" href="studypackets.html">Study Packets</a>
+                    <a class="btn btn-ghost" href="#section-subjects">Study Packets</a>
             </div>
         </header>
         
@@ -37,7 +37,7 @@
             <div class="row">
                 <h2>Peer Academic Support</h2>
                 <p class="long-copy">
-                Hello, we're Study Space, a casual student support program at Western Canada High School. Feel free to use our study packets or request to have one made over in the "Contact Us" section!
+                Hello, we're Study Space, a casual student support program at Western Canada High School. Feel free to use our study packets!
                 </p>
             </div>
                 
@@ -46,7 +46,7 @@
                     <i class="ion-edit icon-large"></i>
                     <h3>What do we do?</h3>
                     <p>
-                        We have many academically strong student mentors available to help  you with any of your questions. We offer support for courses in the sciences and maths. We also provide a chance for peers to edit your essays.
+                        We have many academically strong student mentors who can offer support for courses in the sciences and maths. We also provide a chance for peers to edit your essays.
                     </p>
                 </div>
                 <div class="col span-1-of-2 box">
@@ -61,89 +61,50 @@
         
         <section class="section-subjects js--section-subjects" id="section-subjects">
             <div class = "row">
-                <h2 class="subject-area-heading">Subject Areas</h2>
+                <h2 class="subject-area-heading">Study Packets</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-4 math">
-                    <h4><a href="studypackets.html#math">Math</a></h4>
+                    <h4>Math</h4>
                     <i class="ion-calculator icon-math icon-subjects"></i>
+                    
+                    <ul class="studypackets">
+                        <li><a href="resources/data/studypackets/Math%2030%20-%20Polynomials.pdf"> Math 30 - Polynomials</a></li>   
+                        <li><a href="resources/data/studypackets/Math%2010C%20-%20Algebra.pdf"> Math 10C - Algebra</a></li>  
+                    </ul>
+                        
                 </div>
+                
                 <div class="col span-1-of-4 chem">
-                    <h4><a href="studypackets.html#chem">Chemistry</a></h4>
+                    <h4>Chemistry</h4>
                     <i class="ion-erlenmeyer-flask icon-chem icon-subjects"></i>
+                    
+                    <ul class="studypackets">
+                        <li><a href="resources/data/studypackets/Chem%2030%20-%20Acids%20and%20Bases.pdf"> Chem 30 - Acids and Bases</a></li>
+                    </ul>     
                 </div>
+
                 <div class="col span-1-of-4 physics">
-                    <h4><a href="studypackets.html#physics">Physics</a></h4>
+                    <h4>Physics</h4>
                     <i class="ion-planet icon-physics icon-subjects"></i>
+                    
+                     <ul class="studypackets">
+                        <li><a href="resources/data/studypackets/Physics%2020%20-Kinematics.pdf"> Physics 20 - Kinematics</a></li>   
+                    </ul>                          
                 </div>
+
+                
                 <div class="col span-1-of-4 bio">
-                    <h4><a href="studypackets.html#bio">Biology</a></h4>
+                    <h4>Biology</h4>
                     <i class="ion-leaf icon-bio icon-subjects"></i>
+                    
+                    <ul class="studypackets">
+                        <li><a href="resources/data/studypackets/Physics%2020%20-Kinematics.pdf"> Bio 30 - Reproduction</a></li>   
+                    </ul>     
                 </div>
             </div>
         </section>
         
-        <section class="section-contact js--section-contact" id="section-contact">
-            <div class = "row" id = "form">
-                <h2 class="contact-heading">Request Study Packets!</h2>
-            </div>
-            <div class = "row">
-                <form method="post" action="mailer.php" class="contact-form"> 
-                        
-                    <div class = "row">  
-                            <div class="form-messages success"> 
-                                Thank you! Your request has been sent.
-                            </div>
-                        
-                            <div class="form-messages error"> 
-                                Oops. Something went wrong. Please try again!
-                            </div>
-                    </div>
-                        
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>    
-                    <div class = "row">     
-                        <div class="col span-1-of-3">
-                            <label for="subject">Subject Area</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="subject" id="subject" placeholder="Requested Subject" required>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class="col span-1-of-3">
-                            <label for="unit">Unit</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="unit" id="unit" placeholder="Requested Unit" required>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class="col span-1-of-3">
-                            <label>Comments and Concerns</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="comments" placeholder="Your comments"></textarea>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send request!">
-                        </div>
-                    </div>
-                </form>
-            </div>          
-        </section>
-    
         <footer>
             <div class="row">
                 <div class = "col span-1-of-2">
@@ -155,8 +116,7 @@
                 <div class = "col span-1-of-2">
                     <ul class="footer-nav">
                         <li><a href="#section-description">What We Do</a></li>
-                        <li><a href="#section-subjects">Subject Areas</a></li>   
-                        <li><a href="#section-contact">Contact Us</a></li>
+                        <li><a href="#section-subjects">Study Packets</a></li>   
                     </ul>
                 </div>
             </div>

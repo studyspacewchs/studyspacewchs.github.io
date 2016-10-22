@@ -182,7 +182,7 @@ input[type=submit] {
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #2ecc71;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .btn:hover,
@@ -212,7 +212,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 45vh;
     background-attachment: fixed;
 }
 
@@ -221,7 +221,7 @@ header {
     width: 1140px;
     top: 34%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
 }
 
 .logo {
@@ -279,6 +279,7 @@ header {
 
 .subject-area-heading:after {
     background-color: #e74c3c;
+    
 }
 
 .math a:link,
@@ -289,94 +290,66 @@ header {
 .physics a:visited,
 .bio a:link,
 .bio a:visited {
-    padding: 8px 0;
+    padding: 12px 0;
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 85%;
+    text-align: center;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.25s;
+    transition: color 0.15s;
 }
 
 .math a:hover,
 .math a:active {
-    border-bottom: 2px solid #e67e22;
+    color: #e67e22;
 }
 
 .chem a:hover,
 .chem a:active {
-    border-bottom: 2px solid #3498db;
+    color: #3498db;
 }
 
 .physics a:hover,
 .physics a:active {
-    border-bottom: 2px solid #9b59b6;
+    color: #9b59b6;
 }
 
 .bio a:hover,
 .bio a:active {
-    border-bottom: 2px solid #27ae60;
+    color: #27ae60;
 }
 
-/* ============================================== */
-/* CONTACT */
-/* ============================================== */
-
-.section-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/CalgaryBackground.jpg);
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-    padding: 5% 0;
+.math h4,
+.chem h4,
+.physics h4,
+.bio h4 {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 125%;
 }
 
-.contact-heading {
-    color: #fff;
-}
-.contact-heading:after {
-    background-color: #bdc3c7;
-}
-
-.contact-form {
-    width: 65%;
-    margin: 0 auto;
-}
-
-input[type=text],
-input[type=email],
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
+.math h4:after,
+.chem h4:after,
+.physics h4:after,
+.bio h4:after {
+    display: block;
+    height: 1px;
+    background-color: #ddd;
+    content: " ";
+    width: 150px;
+    margin: 20px auto;
 }
 
-textarea {
-    height: 120px;
-    margin-bottom: 10px;
+
+.studypackets {
+    list-style: none;
 }
 
-*:focus {
-    outline: none;
-}
-
-.form-messages {
-    width:70%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 3px;
-    margin-bottom: 20px;
+.studypackets li {
     text-align: center;
-    color:#222; 
-}
-
-.success {
-    background-color: rgba(39, 174, 96, 0.75);
-}
-
-.error {
-    background-color: rgba(231, 76, 60, 0.75);
+    margin: 20px 0;
 }
 
 /* ============================================== */
@@ -448,85 +421,4 @@ footer p {
     text-align: center;
     font-size: 60%;
     margin-top: 17px;
-}
-
-/* ============================================== */
-/* STUDY PACKETS */
-/* ============================================== */
-
-.studypacket-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    background-attachment: fixed;
-}
-
-.studypacket-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 15%;
-    left: 50%;
-    margin-top: 10px;
-    padding-bottom: 0px;
-    transform: translate(-50%, -50%);
-}
-
-.studypacket-nav {
-    float: right;
-    list-style: none;
-    margin-top: 20px;
-}
-
-.studypacket-nav li {
-    display: inline-block;
-    margin-left: 35px;
-}
-
-.studypacket-nav li a:link,
-.studypacket-nav li a:visited {
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.25s;
-}
-
-.studypacket-nav li a:hover,
-.studypacket-nav li a:active {
-    border-bottom: 2px solid #e74c3c;
-}
-
-/* ============================================== */
-/* MATH */
-/* ============================================== */
-
-.math-heading:after {
-    background-color: #e67e22; 
-}
-
-/* ============================================== */
-/* CHEM */
-/* ============================================== */
-
-.chem-heading:after {
-    background-color: #3498db; 
-}
-
-/* ============================================== */
-/* PHYSICS */
-/* ============================================== */
-
-.physics-heading:after {
-    background-color: #9b59b6; 
-}
-
-/* ============================================== */
-/* BIO */
-/* ============================================== */
-
-.bio-heading:after {
-    background-color: #27ae60; 
 }
