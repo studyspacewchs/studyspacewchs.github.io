@@ -18,7 +18,7 @@ html {
 }
 
 /* ============================================== */
-/* REUSABLE COMPONENTS */
+/* COMPONENTS */
 /* ============================================== */
 
 .row {
@@ -171,14 +171,6 @@ input[type=submit] {
     transition: background-color 0.25s, border 0.25s;
 }
 
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #2ecc71;
-    border: 1px solid #2ecc71;
-    margin-right: 12px;
-}
-
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #2ecc71;
@@ -190,13 +182,6 @@ input[type=submit] {
 input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #28b062;
-}
-
-.btn-full:hover,
-.btn-full:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    border: 1px solid #28b062;
 }
 
 .btn-ghost:hover,
@@ -282,14 +267,8 @@ header {
     
 }
 
-.math a:link,
-.math a:visited,
-.chem a:link,
-.chem a:visited, 
-.physics a:link,
-.physics a:visited,
-.bio a:link,
-.bio a:visited {
+.section-subjects a:link,
+.section-subjects a:visited {
     padding: 12px 0;
     color: #000;
     text-decoration: none;
@@ -320,20 +299,14 @@ header {
     color: #27ae60;
 }
 
-.math h4,
-.chem h4,
-.physics h4,
-.bio h4 {
+.section-subjects h4 {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 125%;
 }
 
-.math h4:after,
-.chem h4:after,
-.physics h4:after,
-.bio h4:after {
+.section-subjects h4:after {
     display: block;
     height: 1px;
     background-color: #ddd;
@@ -341,7 +314,6 @@ header {
     width: 150px;
     margin: 20px auto;
 }
-
 
 .studypackets {
     list-style: none;
